@@ -1,0 +1,16 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NECROMANCY_COMMAND_FOLLOW",
+    "effect": [
+      { "u_message": "You command your undead minions to follow you." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NECROMANCY_COMMAND_STAY",
+    "effect": [
+      { "u_message": "You command your undead minions to stay here." }
+    ]
+  }
+]

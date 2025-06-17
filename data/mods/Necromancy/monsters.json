@@ -1,0 +1,121 @@
+[
+  {
+    "abstract": "necromancy_undead_minion_base",
+    "type": "MONSTER",
+    "name": { "str": "undead minion" },
+    "description": "A reanimated creature bound to your will through necromantic magic.",
+    "species": [ "ZOMBIE" ],
+    "flags": [
+      "REVIVES",
+      "CANPLAY", 
+      "PET_MOUNTABLE",
+      "FRIENDLY_SPECIAL",
+      "NO_BREATHE",
+      "POISON_IMMUNE",
+      "SEES_PLAYER"
+    ],
+    "anger_triggers": [ "HURT", "PLAYER_HURT_ALLY" ],
+    "fear_triggers": [],
+    "placate_triggers": [ "PLAYER_ALLY" ],
+    "starting_ammo": {},
+    "upgrades": false,
+    "reproduction": false,
+    "baby_monster": null,
+    "biosignature": { "biosig_item": "fp_loyalty_card", "biosig_factor": 3 },
+    "petfood": {
+      "food": [ "FLESH" ],
+      "feed": "You feed your undead minion some flesh.",
+      "pet": "You pat your undead minion."
+    }
+  },
+  {
+    "id": "mon_necromancy_zombie_minion",
+    "copy-from": "mon_zombie",
+    "type": "MONSTER",
+    "name": { "str": "undead zombie minion" },
+    "description": "A zombie reanimated through necromantic magic. It follows your commands with unwavering loyalty.",
+    "species": [ "ZOMBIE" ],
+    "default_faction": "your_followers",
+    "flags": [
+      "REVIVES",
+      "CANPLAY",
+      "PET_MOUNTABLE", 
+      "FRIENDLY_SPECIAL",
+      "NO_BREATHE",
+      "POISON_IMMUNE",
+      "SEES_PLAYER"
+    ],
+    "anger_triggers": [ "HURT", "PLAYER_HURT_ALLY" ],
+    "fear_triggers": [],
+    "placate_triggers": [ "PLAYER_ALLY" ],
+    "starting_ammo": {},
+    "upgrades": false,
+    "reproduction": false,
+    "baby_monster": null,
+    "petfood": {
+      "food": [ "FLESH" ],
+      "feed": "You feed your undead minion some flesh.",
+      "pet": "You pat your undead minion."
+    }
+  },
+  {
+    "id": "mon_necromancy_dog_minion",
+    "copy-from": "mon_dog",
+    "type": "MONSTER", 
+    "name": { "str": "undead dog minion" },
+    "description": "A dog reanimated through necromantic magic. Its eyes glow with unnatural light, but it remains loyal to you.",
+    "species": [ "ZOMBIE" ],
+    "default_faction": "your_followers",
+    "flags": [
+      "REVIVES",
+      "CANPLAY",
+      "PET_MOUNTABLE",
+      "FRIENDLY_SPECIAL", 
+      "NO_BREATHE",
+      "POISON_IMMUNE",
+      "SEES_PLAYER"
+    ],
+    "anger_triggers": [ "HURT", "PLAYER_HURT_ALLY" ],
+    "fear_triggers": [],
+    "placate_triggers": [ "PLAYER_ALLY" ],
+    "starting_ammo": {},
+    "upgrades": false,
+    "reproduction": false,
+    "baby_monster": null,
+    "petfood": {
+      "food": [ "FLESH" ],
+      "feed": "You feed your undead minion some flesh.",
+      "pet": "You pat your undead minion."
+    }
+  },
+  {
+    "id": "mon_necromancy_bear_minion",
+    "copy-from": "mon_bear",
+    "type": "MONSTER",
+    "name": { "str": "undead bear minion" },
+    "description": "A massive bear reanimated through necromantic magic. Despite its fearsome appearance, it obeys your every command.",
+    "species": [ "ZOMBIE" ],
+    "default_faction": "your_followers",
+    "flags": [
+      "REVIVES",
+      "CANPLAY",
+      "PET_MOUNTABLE",
+      "FRIENDLY_SPECIAL",
+      "NO_BREATHE", 
+      "POISON_IMMUNE",
+      "SEES_PLAYER"
+    ],
+    "anger_triggers": [ "HURT", "PLAYER_HURT_ALLY" ],
+    "fear_triggers": [],
+    "placate_triggers": [ "PLAYER_ALLY" ],
+    "starting_ammo": {},
+    "upgrades": false,
+    "reproduction": false,
+    "baby_monster": null,
+    "petfood": {
+      "food": [ "FLESH" ],
+      "feed": "You feed your undead minion some flesh.",
+      "pet": "You pat your undead minion."
+    }
+  }
+]

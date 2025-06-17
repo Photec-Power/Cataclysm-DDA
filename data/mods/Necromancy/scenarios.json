@@ -1,0 +1,13 @@
+[
+  {
+    "type": "scenario",
+    "id": "necromancer_test",
+    "name": "Necromancer Test",
+    "description": "A test scenario for the necromancy mod with some corpses to practice on.",
+    "points": 0,
+    "start_name": "Necromancy Testing Ground",
+    "allowed_locs": [ "necromancy_test_location" ],
+    "professions": [ "necromancer" ],
+    "flags": [ "CITY_START" ]
+  }
+]

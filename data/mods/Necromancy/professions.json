@@ -1,0 +1,26 @@
+[
+  {
+    "type": "profession",
+    "id": "necromancer",
+    "name": "Necromancer",
+    "description": "You have delved into the forbidden arts of necromancy, learning to command the undead. The apocalypse has given you ample opportunity to practice your dark craft.",
+    "points": 2,
+    "skills": [
+      { "level": 3, "name": "necromancy" },
+      { "level": 2, "name": "spellcraft" },
+      { "level": 1, "name": "firstaid" }
+    ],
+    "items": {
+      "both": {
+        "items": [ "pants", "longshirt", "boots" ],
+        "entries": [
+          { "item": "necromancy_tome" },
+          { "item": "necromancy_staff" },
+          { "item": "knife_butcher" },
+          { "item": "flashlight" },
+          { "item": "battery" }
+        ]
+      }
+    }
+  }
+]

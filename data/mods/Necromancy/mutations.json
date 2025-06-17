@@ -1,0 +1,16 @@
+[
+  {
+    "type": "mutation",
+    "id": "NECROMANTIC_AFFINITY",
+    "name": { "str": "Necromantic Affinity" },
+    "points": 2,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "You have a natural affinity for necromantic magic. Your undead minions are more loyal and effective.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "NECROMANCY" ],
+    "spells_learned": [ [ "necromancy_resurrect", 1 ] ],
+    "skill_modifiers": [ { "skill": "necromancy", "modifier": 2 } ]
+  }
+]

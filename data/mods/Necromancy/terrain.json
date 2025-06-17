@@ -1,0 +1,23 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_necromancy_corpse_site",
+    "name": "corpse",
+    "description": "The remains of a creature. With necromantic knowledge, you might be able to resurrect it.",
+    "symbol": "%",
+    "color": "brown",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH" ],
+    "examine_action": "necromancy_corpse"
+  },
+  {
+    "type": "terrain",
+    "id": "t_necromancy_ritual_circle",
+    "name": "ritual circle",
+    "description": "A circle of arcane symbols carved into the ground, used for necromantic rituals.",
+    "symbol": "o",
+    "color": "dark_gray",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH" ]
+  }
+]
