@@ -148,6 +148,7 @@ void workbench( Character &you, const tripoint_bub_ms &examp );
 void workbench_internal( Character &you, const tripoint_bub_ms &examp,
                          const std::optional<vpart_reference> &part );
 void workout( Character &you, const tripoint_bub_ms &examp );
+void necromancy_corpse( Character &you, const tripoint_bub_ms &examp );
 void invalid( Character &you, const tripoint_bub_ms &examp );
 
 bool pour_into_keg( const tripoint_bub_ms &pos, item &liquid, bool silent );

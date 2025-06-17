@@ -1,0 +1,20 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "necromancy",
+    "name": "Necromancy",
+    "authors": [ "Devin AI" ],
+    "maintainers": [ "Devin AI" ],
+    "description": "Allows resurrection of killed creatures as undead minions that follow and obey the player.",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "skill",
+    "id": "necromancy",
+    "name": "necromancy",
+    "display_category": "display_ranged",
+    "sort_rank": 14600,
+    "description": "Your skill in the dark arts of necromancy. Represents knowledge of death magic and undead control. A higher skill increases the effectiveness of necromantic abilities and allows control of more powerful undead."
+  }
+]

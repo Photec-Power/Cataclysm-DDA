@@ -1,0 +1,14 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "necromancy_test_location",
+    "name": "necromancy testing ground",
+    "sym": "N",
+    "color": "dark_gray",
+    "see_cost": 5,
+    "extras": "field",
+    "mondensity": 2,
+    "spawns": { "group": "GROUP_ZOMBIE", "population": [ 0, 1 ], "chance": 50 },
+    "flags": [ "KNOWN_DOWN" ]
+  }
+]

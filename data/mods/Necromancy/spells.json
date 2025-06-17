@@ -1,0 +1,42 @@
+[
+  {
+    "id": "necromancy_command_follow",
+    "type": "SPELL",
+    "name": { "str": "Command: Follow" },
+    "description": "Command your undead minions to follow you.",
+    "valid_targets": [ "ally" ],
+    "skill": "necromancy",
+    "spell_class": "NONE",
+    "energy_source": "NONE",
+    "base_energy_cost": 0,
+    "base_casting_time": 100,
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_NECROMANCY_COMMAND_FOLLOW",
+    "min_range": 10,
+    "max_range": 10,
+    "shape": "blast",
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "flags": [ "NECROMANCY_SPELL", "SILENT" ]
+  },
+  {
+    "id": "necromancy_command_stay",
+    "type": "SPELL",
+    "name": { "str": "Command: Stay" },
+    "description": "Command your undead minions to stay in their current location.",
+    "valid_targets": [ "ally" ],
+    "skill": "necromancy",
+    "spell_class": "NONE",
+    "energy_source": "NONE",
+    "base_energy_cost": 0,
+    "base_casting_time": 100,
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_NECROMANCY_COMMAND_STAY",
+    "min_range": 10,
+    "max_range": 10,
+    "shape": "blast",
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "flags": [ "NECROMANCY_SPELL", "SILENT" ]
+  }
+]
