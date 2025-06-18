@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "necromancy_test_location" ],
     "weight": 100,
     "object": {
