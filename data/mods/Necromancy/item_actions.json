@@ -2,19 +2,16 @@
   {
     "type": "item_action",
     "id": "NECROMANCY_RESURRECT",
-    "name": "Resurrect as minion",
-    "menu_text": "Resurrect this corpse as your undead minion"
+    "name": "Resurrect as minion"
   },
   {
     "type": "item_action",
     "id": "NECROMANCY_COMMAND_FOLLOW",
-    "name": "Command to follow",
-    "menu_text": "Command your undead minions to follow you"
+    "name": "Command to follow"
   },
   {
     "type": "item_action",
     "id": "NECROMANCY_COMMAND_STAY",
-    "name": "Command to stay",
-    "menu_text": "Command your undead minions to stay here"
+    "name": "Command to stay"
   }
 ]
