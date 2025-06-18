@@ -1,7 +1,8 @@
 [
   {
     "id": "necromancy_tome",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "Tome of Necromancy" },
     "description": "A dark tome containing forbidden knowledge of death magic and undead control.",
     "weight": "1200 g",
