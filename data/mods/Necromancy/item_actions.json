@@ -13,7 +13,7 @@
   },
   {
     "type": "item_action",
-    "id": "NECROMANCY_COMMAND_STAY", 
+    "id": "NECROMANCY_COMMAND_STAY",
     "name": "Command to stay",
     "menu_text": "Command your undead minions to stay here"
   }
