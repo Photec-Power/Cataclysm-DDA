@@ -12,16 +12,17 @@
     "material": [ "paper" ],
     "symbol": "?",
     "color": "dark_gray",
-    "skill": "necromancy",
+    "read_skill": "necromancy",
     "required_level": 0,
     "max_level": 5,
     "intelligence": 8,
     "time": "30 m",
-    "fun": -2
+    "read_fun": -2
   },
   {
     "id": "necromancy_staff",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "Necromantic Staff" },
     "description": "A gnarled staff imbued with dark energy. It helps focus necromantic spells.",
     "weight": "1500 g",
