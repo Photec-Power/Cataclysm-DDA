@@ -65,6 +65,7 @@
 #include "memory_fast.h"
 #include "messages.h"
 #include "mission_companion.h"
+#include "monster.h"
 #include "mtype.h"
 #include "mutation.h"
 #include "npc.h"
@@ -128,6 +129,7 @@ static const efftype_id effect_gliding( "gliding" );
 static const efftype_id effect_incorporeal( "incorporeal" );
 static const efftype_id effect_infected( "infected" );
 static const efftype_id effect_mending( "mending" );
+static const efftype_id effect_necromancy_exhaustion( "necromancy_exhaustion" );
 static const efftype_id effect_pblue( "pblue" );
 static const efftype_id effect_pet( "pet" );
 static const efftype_id effect_pkill2( "pkill2" );
@@ -260,6 +262,7 @@ static const requirement_id requirement_data_cvd_diamond( "cvd_diamond" );
 static const skill_id skill_chemistry( "chemistry" );
 static const skill_id skill_cooking( "cooking" );
 static const skill_id skill_fabrication( "fabrication" );
+static const skill_id skill_necromancy( "necromancy" );
 static const skill_id skill_survival( "survival" );
 static const skill_id skill_traps( "traps" );
 
@@ -7842,29 +7845,26 @@ void iexamine::necromancy_corpse( Character &you, const tripoint_bub_ms &examp )
 {
     map &here = get_map();
 
-    if( you.get_skill_level( skill_id( "necromancy" ) ) < 1 ) {
+    if( you.get_skill_level( skill_necromancy ) < 1 ) {
         add_msg( m_info, _( "You don't know enough about necromancy to resurrect corpses." ) );
         return;
     }
 
-    bool found_corpse = false;
     for( item &it : here.i_at( examp ) ) {
         if( it.is_corpse() && !it.has_flag( flag_PULPED ) ) {
-            found_corpse = true;
-
             if( you.get_stamina() < 200 ) {
                 add_msg( m_bad, _( "You don't have enough stamina to perform the resurrection ritual." ) );
                 return;
             }
 
-            add_msg( m_info, _( "You begin channeling dark energy into the %s..." ), it.tname() );
+            add_msg( m_info, _( "You begin channeling dark energy into the %s…" ), it.tname() );
             you.mod_stamina( -200 );
             you.add_msg_if_player( m_info, _( "Dark energy flows through the corpse as it begins to stir!" ) );
 
             if( g->revive_corpse( examp, it ) ) {
                 here.i_rem( examp, &it );
-                you.practice( skill_id( "necromancy" ), 5 );
-                you.add_effect( efftype_id( "necromancy_exhaustion" ), 30_minutes );
+                you.practice( skill_necromancy, 5 );
+                you.add_effect( effect_necromancy_exhaustion, 30_minutes );
                 add_msg( m_good, _( "The corpse rises as your undead minion!" ) );
 
                 monster *new_minion = get_creature_tracker().creature_at<monster>( examp );
@@ -7879,9 +7879,7 @@ void iexamine::necromancy_corpse( Character &you, const tripoint_bub_ms &examp )
         }
     }
 
-    if( !found_corpse ) {
-        add_msg( m_info, _( "There are no suitable corpses here to resurrect." ) );
-    }
+    add_msg( m_info, _( "There are no suitable corpses here to resurrect." ) );
 }
 
 void iexamine::practice_survival_while_foraging( Character &who )
