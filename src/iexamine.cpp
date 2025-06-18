@@ -7841,32 +7841,32 @@ iexamine_functions iexamine_functions_from_string( const std::string &function_n
 void iexamine::necromancy_corpse( Character &you, const tripoint_bub_ms &examp )
 {
     map &here = get_map();
-    
+
     if( you.get_skill_level( skill_id( "necromancy" ) ) < 1 ) {
         add_msg( m_info, _( "You don't know enough about necromancy to resurrect corpses." ) );
         return;
     }
-    
+
     bool found_corpse = false;
     for( item &it : here.i_at( examp ) ) {
         if( it.is_corpse() && !it.has_flag( flag_PULPED ) ) {
             found_corpse = true;
-            
+
             if( you.get_stamina() < 200 ) {
                 add_msg( m_bad, _( "You don't have enough stamina to perform the resurrection ritual." ) );
                 return;
             }
-            
+
             add_msg( m_info, _( "You begin channeling dark energy into the %s..." ), it.tname() );
             you.mod_stamina( -200 );
             you.add_msg_if_player( m_info, _( "Dark energy flows through the corpse as it begins to stir!" ) );
-            
+
             if( g->revive_corpse( examp, it ) ) {
                 here.i_rem( examp, &it );
                 you.practice( skill_id( "necromancy" ), 5 );
                 you.add_effect( efftype_id( "necromancy_exhaustion" ), 30_minutes );
                 add_msg( m_good, _( "The corpse rises as your undead minion!" ) );
-                
+
                 monster *new_minion = get_creature_tracker().creature_at<monster>( examp );
                 if( new_minion ) {
                     new_minion->friendly = -1;
@@ -7878,7 +7878,7 @@ void iexamine::necromancy_corpse( Character &you, const tripoint_bub_ms &examp )
             return;
         }
     }
-    
+
     if( !found_corpse ) {
         add_msg( m_info, _( "There are no suitable corpses here to resurrect." ) );
     }
