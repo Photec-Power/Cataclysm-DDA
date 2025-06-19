@@ -15,7 +15,7 @@
     "name": "necromancy",
     "display_category": "display_ranged",
     "sort_rank": 14600,
-    "description": "Your skill in the dark arts of necromancy. Represents knowledge of death magic and undead control. A higher skill increases the effectiveness of necromantic abilities and allows control of more powerful undead."
+    "description": "Your skill in the dark arts of necromancy.  Represents knowledge of death magic and undead control.  A higher skill increases the effectiveness of necromantic abilities and allows control of more powerful undead."
   },
   {
     "type": "skill",
@@ -23,6 +23,6 @@
     "name": "spellcraft",
     "display_category": "display_ranged",
     "sort_rank": 14500,
-    "description": "Your skill in the arcane. Represents magical theory and manipulation of mana. Higher levels improve spell success."
+    "description": "Your skill in the arcane.  Represents magical theory and manipulation of mana.  Higher levels improve spell success."
   }
 ]

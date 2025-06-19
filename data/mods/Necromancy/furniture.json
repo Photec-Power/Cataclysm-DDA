@@ -3,7 +3,7 @@
     "type": "furniture",
     "id": "f_necromancy_altar",
     "name": "necromantic altar",
-    "description": "A dark stone altar carved with arcane symbols. It radiates an aura of death and decay.",
+    "description": "A dark stone altar carved with arcane symbols.  It radiates an aura of death and decay.",
     "symbol": "_",
     "color": "dark_gray",
     "move_cost_mod": 2,

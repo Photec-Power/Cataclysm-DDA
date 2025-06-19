@@ -86,7 +86,7 @@
     "magic_type": "magiclysm_generic_magic",
     "base_energy_cost": 400,
     "base_casting_time": 3000,
-    "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL", "CONCENTRATE", "CONSUMES_RUNES" ],
+    "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL", "CONCENTRATE", "CONSUMES_RUNES", "PERMANENT" ],
     "extra_effects": [ { "id": "eoc_summon_setup", "hit_self": true } ]
   },
   {
@@ -119,7 +119,7 @@
     "max_range": 3,
     "min_aoe": 2,
     "max_aoe": 2,
-    "flags": [ "CONJURATION_SPELL", "SILENT", "NO_EXPLOSION_SFX", "NO_CORPSE_QUIET" ]
+    "flags": [ "CONJURATION_SPELL", "SILENT", "NO_EXPLOSION_SFX", "NO_CORPSE_QUIET", "PERMANENT" ]
   },
   {
     "id": "summon_zombie",
@@ -205,7 +205,7 @@
     "magic_type": "magiclysm_generic_magic",
     "base_energy_cost": 600,
     "base_casting_time": 3000,
-    "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL", "CONCENTRATE", "CONSUMES_RUNES" ],
+    "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL", "CONCENTRATE", "CONSUMES_RUNES", "PERMANENT" ],
     "extra_effects": [ { "id": "eoc_summon_setup", "hit_self": true } ]
   },
   {
@@ -240,7 +240,7 @@
     "max_range": 3,
     "min_aoe": 2,
     "max_aoe": 2,
-    "flags": [ "CONJURATION_SPELL", "SILENT", "NO_EXPLOSION_SFX", "NO_CORPSE_QUIET" ]
+    "flags": [ "CONJURATION_SPELL", "SILENT", "NO_EXPLOSION_SFX", "NO_CORPSE_QUIET", "PERMANENT" ]
   },
   {
     "id": "summon_zombie_dog",
@@ -394,7 +394,7 @@
     "name": "Domination",
     "description": "Force the undead creature you pick to obey your command, making it your ally for a short time.",
     "valid_targets": [ "hostile" ],
-    "flags": [ "ENERVATION_SPELL", "CONCENTRATE", "SOMATIC", "SILENT", "CONSUMES_RUNES" ],
+    "flags": [ "ENERVATION_SPELL", "CONCENTRATE", "SOMATIC", "SILENT", "CONSUMES_RUNES", "PERMANENT" ],
     "effect": "charm_monster",
     "targeted_monster_species": [ "ZOMBIE" ],
     "components": "spell_components_rune_animist_3",
@@ -499,7 +499,7 @@
     "name": "Soulrend",
     "description": "Violently tears the spirit from the body and binds the resulting shade to your will.",
     "valid_targets": [ "hostile", "ally" ],
-    "flags": [ "CONJURATION_SPELL", "NO_LEGS", "LOUD", "SOMATIC", "POLYMORPH_GROUP", "FRIENDLY_POLY", "NO_HANDS" ],
+    "flags": [ "CONJURATION_SPELL", "NO_LEGS", "LOUD", "SOMATIC", "POLYMORPH_GROUP", "FRIENDLY_POLY", "NO_HANDS", "PERMANENT" ],
     "effect": "targeted_polymorph",
     "effect_str": "GROUP_POLYMORPH_SHADOW",
     "shape": "blast",
@@ -565,7 +565,7 @@
     "base_casting_time": 500,
     "min_aoe": 3,
     "max_aoe": 3,
-    "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL" ],
+    "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL", "PERMANENT" ],
     "extra_effects": [ { "id": "eoc_summon_setup", "hit_self": true } ]
   },
   {
@@ -624,7 +624,7 @@
     "effect": "summon",
     "effect_str": "mon_wisp",
     "shape": "blast",
-    "flags": [ "CONJURATION_SPELL", "LOUD", "SOMATIC" ],
+    "flags": [ "CONJURATION_SPELL", "LOUD", "SOMATIC", "PERMANENT" ],
     "magic_type": "magiclysm_generic_magic",
     "spell_class": "ANIMIST",
     "difficulty": 2,
@@ -674,7 +674,7 @@
     "effect_str": "decaying_boneclub",
     "shape": "blast",
     "valid_targets": [ "self" ],
-    "flags": [ "CONJURATION_SPELL", "SOMATIC", "CONCENTRATE", "VERBAL" ],
+    "flags": [ "CONJURATION_SPELL", "SOMATIC", "CONCENTRATE", "VERBAL", "PERMANENT" ],
     "components": "spell_components_decayingboneclub",
     "max_level": 15,
     "min_damage": 1,
@@ -697,7 +697,7 @@
     "effect_str": "decaying_boneclub",
     "shape": "blast",
     "valid_targets": [ "self" ],
-    "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL", "NO_FAIL" ],
+    "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL", "NO_FAIL", "PERMANENT" ],
     "components": "spell_components_decayingboneclub",
     "max_level": 25,
     "min_damage": 1,
@@ -820,7 +820,7 @@
     "type": "SPELL",
     "name": { "str": "Summon Watcher Spirit" },
     "description": "Summon a watcher spirit, whose senses overlap with your own and through whose eyes you can see.  Although they are spirits, they are fragile and dissipate easily in the face of any assault.",
-    "flags": [ "CONJURATION_SPELL", "SOMATIC", "CONCENTRATE", "VERBAL", "NO_PROJECTILE" ],
+    "flags": [ "CONJURATION_SPELL", "SOMATIC", "CONCENTRATE", "VERBAL", "NO_PROJECTILE", "PERMANENT" ],
     "spell_class": "ANIMIST",
     "effect": "summon",
     "effect_str": "mon_watcher_spirit",
@@ -881,7 +881,7 @@
     "type": "SPELL",
     "name": { "str": "Osseous Luck" },
     "description": "Attract spirits of good fortune to a bone, granting minor bonuses as long as it is carried.  Though benevolent, the spirits are capricious, and exactly what benefits they will provide cannot be determined ahead of time.  The bone crumbles to dust when the spell duration expires and the spirits leave.",
-    "flags": [ "CONJURATION_SPELL", "SOMATIC", "CONCENTRATE", "VERBAL" ],
+    "flags": [ "CONJURATION_SPELL", "SOMATIC", "CONCENTRATE", "VERBAL", "PERMANENT" ],
     "spell_class": "ANIMIST",
     "effect": "spawn_item",
     "effect_str": "item_animist_luck_bone",
@@ -949,7 +949,7 @@
     "valid_targets": [ "self" ],
     "spell_class": "ANIMIST",
     "//": "Despite providing a buff, this is a Conjuration spell because the buff is provided by the summoned spirit.",
-    "flags": [ "CONJURATION_SPELL", "CONCENTRATE", "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "flags": [ "CONJURATION_SPELL", "CONCENTRATE", "VERBAL", "SOMATIC", "NO_LEGS", "PERMANENT" ],
     "effect": "attack",
     "effect_str": "effect_animist_add_evasion",
     "shape": "blast",
