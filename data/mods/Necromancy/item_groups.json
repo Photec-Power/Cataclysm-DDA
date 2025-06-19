@@ -1,0 +1,7 @@
+[
+  {
+    "type": "item_group",
+    "id": "necromancy_loot",
+    "items": [ [ "necromancy_tome", 100 ], [ "necromancy_staff", 100 ] ]
+  }
+]

@@ -31,8 +31,9 @@
         "#......................#",
         "########################"
       ],
-      "terrain": { "#": "t_wall", ".": "t_floor", "o": "t_necromancy_ritual_circle", "_": "f_necromancy_altar" },
-      "items": { "_": [ { "item": "necromancy_tome", "chance": 100 }, { "item": "necromancy_staff", "chance": 100 } ] }
+      "terrain": { "#": "t_wall", ".": "t_floor", "o": "t_necromancy_ritual_circle" },
+      "furniture": { "_": "f_necromancy_altar" },
+      "items": { "_": { "item": "necromancy_loot", "chance": 100 } }
     }
   }
 ]
