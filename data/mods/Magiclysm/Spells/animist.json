@@ -87,9 +87,6 @@
     "base_energy_cost": 400,
     "base_casting_time": 3000,
     "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL", "CONCENTRATE", "CONSUMES_RUNES" ],
-    "min_duration": 36000,
-    "max_duration": 1080000,
-    "duration_increment": 36000,
     "extra_effects": [ { "id": "eoc_summon_setup", "hit_self": true } ]
   },
   {
@@ -122,10 +119,7 @@
     "max_range": 3,
     "min_aoe": 2,
     "max_aoe": 2,
-    "flags": [ "CONJURATION_SPELL", "SILENT", "NO_EXPLOSION_SFX", "NO_CORPSE_QUIET" ],
-    "min_duration": 36000,
-    "max_duration": 1080000,
-    "duration_increment": 36000
+    "flags": [ "CONJURATION_SPELL", "SILENT", "NO_EXPLOSION_SFX", "NO_CORPSE_QUIET" ]
   },
   {
     "id": "summon_zombie",
@@ -136,10 +130,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_zombie",
-    "max_level": 35,
-    "min_duration": 216000,
-    "max_duration": 216000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_tough_zombie",
@@ -150,10 +141,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_zombie_tough",
-    "max_level": 35,
-    "min_duration": 468000,
-    "max_duration": 468000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_zombie_brute",
@@ -164,10 +152,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_zombie_brute",
-    "max_level": 35,
-    "min_duration": 720000,
-    "max_duration": 720000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_skeleton",
@@ -178,10 +163,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_skeleton",
-    "max_level": 35,
-    "min_duration": 972000,
-    "max_duration": 972000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_skeleton_brute",
@@ -192,10 +174,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_skeleton_brute",
-    "max_level": 35,
-    "min_duration": 1260000,
-    "max_duration": 1260000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_skeleton_hulk",
@@ -206,10 +185,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_skeleton_hulk",
-    "max_level": 35,
-    "min_duration": 1260000,
-    "max_duration": 1260000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_undead_swarm",
@@ -230,9 +206,6 @@
     "base_energy_cost": 600,
     "base_casting_time": 3000,
     "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL", "CONCENTRATE", "CONSUMES_RUNES" ],
-    "min_duration": 36000,
-    "max_duration": 1080000,
-    "duration_increment": 36000,
     "extra_effects": [ { "id": "eoc_summon_setup", "hit_self": true } ]
   },
   {
@@ -267,10 +240,7 @@
     "max_range": 3,
     "min_aoe": 2,
     "max_aoe": 2,
-    "flags": [ "CONJURATION_SPELL", "SILENT", "NO_EXPLOSION_SFX", "NO_CORPSE_QUIET" ],
-    "min_duration": 36000,
-    "max_duration": 1080000,
-    "duration_increment": 36000
+    "flags": [ "CONJURATION_SPELL", "SILENT", "NO_EXPLOSION_SFX", "NO_CORPSE_QUIET" ]
   },
   {
     "id": "summon_zombie_dog",
@@ -281,10 +251,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_zombie_dog",
-    "max_level": 35,
-    "min_duration": 144000,
-    "max_duration": 144000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_dog_skeleton",
@@ -295,10 +262,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_dog_skeleton",
-    "max_level": 35,
-    "min_duration": 324000,
-    "max_duration": 324000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_zougar",
@@ -309,10 +273,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_zougar",
-    "max_level": 35,
-    "min_duration": 504000,
-    "max_duration": 504000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_wolf_skeleton",
@@ -323,10 +284,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_wolf_skeleton",
-    "max_level": 35,
-    "min_duration": 684000,
-    "max_duration": 684000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_dog_zombie_brute",
@@ -337,10 +295,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_dog_zombie_brute",
-    "max_level": 35,
-    "min_duration": 864000,
-    "max_duration": 864000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_dog_skeleton_brute",
@@ -351,10 +306,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_dog_skeleton_brute",
-    "max_level": 35,
-    "min_duration": 1044000,
-    "max_duration": 1044000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_dog_zombie_hulk",
