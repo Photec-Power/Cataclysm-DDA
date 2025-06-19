@@ -317,10 +317,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_dog_zombie_hulk",
-    "max_level": 35,
-    "min_duration": 1260000,
-    "max_duration": 1260000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "summon_zougar_hunter",
@@ -331,10 +328,7 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_zougar_hunter",
-    "max_level": 35,
-    "min_duration": 1260000,
-    "max_duration": 1260000,
-    "duration_increment": 36000
+    "max_level": 35
   },
   {
     "id": "necrotic_gaze",
@@ -422,9 +416,6 @@
     "min_aoe": 0,
     "max_aoe": 1,
     "aoe_increment": 0.1,
-    "min_duration": 36000,
-    "max_duration": 1080000,
-    "duration_increment": 36000,
     "base_casting_time": 300,
     "final_casting_time": 30,
     "casting_time_increment": -14,
@@ -578,9 +569,6 @@
     "min_aoe": 3,
     "max_aoe": 3,
     "flags": [ "CONJURATION_SPELL", "SOMATIC", "VERBAL" ],
-    "min_duration": 3600,
-    "max_duration": 12000,
-    "duration_increment": 280,
     "extra_effects": [ { "id": "eoc_summon_setup", "hit_self": true } ]
   },
   {
@@ -654,9 +642,6 @@
     "min_range": 3,
     "max_range": 7,
     "range_increment": 0.16,
-    "min_duration": 6000,
-    "max_duration": 60000,
-    "duration_increment": 2160,
     "extra_effects": [ { "id": "eoc_summon_setup", "hit_self": true } ]
   },
   {
@@ -700,9 +685,6 @@
     "max_level": 15,
     "min_damage": 1,
     "max_damage": 1,
-    "min_duration": 24000,
-    "max_duration": 360000,
-    "duration_increment": 24000,
     "spell_class": "ANIMIST",
     "magic_type": "magiclysm_generic_magic",
     "base_casting_time": 400,
@@ -726,9 +708,6 @@
     "max_level": 25,
     "min_damage": 1,
     "max_damage": 1,
-    "min_duration": 360000,
-    "max_duration": 2160000,
-    "duration_increment": 72000,
     "spell_class": "ANIMIST",
     "magic_type": "magiclysm_generic_magic",
     "base_casting_time": 400,
@@ -761,9 +740,6 @@
     "final_energy_cost": 250,
     "energy_increment": -10,
     "spell_class": "ANIMIST",
-    "min_duration": 1500,
-    "max_duration": 0,
-    "duration_increment": -60,
     "min_dot": 5,
     "max_dot": 5,
     "magic_type": "magiclysm_generic_magic",
@@ -842,9 +818,6 @@
     "difficulty": 5,
     "max_level": 15,
     "base_energy_cost": 500,
-    "min_duration": 90000,
-    "max_duration": 900000,
-    "duration_increment": 60000,
     "base_casting_time": 1500,
     "extra_effects": [ { "id": "eoc_enhancement_setup", "hit_self": true } ]
   },
@@ -866,9 +839,6 @@
     "min_range": 3,
     "max_range": 20,
     "range_increment": 1.1,
-    "min_duration": 24000,
-    "max_duration": 360000,
-    "duration_increment": 24000,
     "magic_type": "magiclysm_generic_magic",
     "base_casting_time": 500,
     "base_energy_cost": 150,
@@ -888,9 +858,6 @@
     "effect_str": "telepathic_ignorance",
     "extra_effects": [ { "id": "animist_mass_hiding_self", "hit_self": true }, { "id": "eoc_enervation_setup", "hit_self": true } ],
     "shape": "blast",
-    "min_duration": 3000,
-    "max_duration": 63000,
-    "duration_increment": 3000,
     "min_aoe": 5,
     "max_aoe": 25,
     "aoe_increment": 1,
