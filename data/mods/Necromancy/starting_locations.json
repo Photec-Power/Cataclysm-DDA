@@ -2,6 +2,7 @@
   {
     "type": "start_location",
     "id": "necromancy_test_location",
-    "overmap_tile": "necromancy_test_location"
+    "name": "Necromancy Testing Ground",
+    "terrain": [ "necromancy_test_location" ]
   }
 ]
