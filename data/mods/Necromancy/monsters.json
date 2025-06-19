@@ -27,7 +27,6 @@
     "placate_triggers": [ "PLAYER_ALLY" ],
     "starting_ammo": {  },
     "upgrades": false,
-    "reproduction": false,
     "baby_monster": null,
     "biosignature": { "biosig_item": "fp_loyalty_card", "biosig_factor": 3 },
     "petfood": { "food": [ "FLESH" ], "feed": "You feed your undead minion some flesh.", "pet": "You pat your undead minion." }
@@ -46,7 +45,6 @@
     "placate_triggers": [ "PLAYER_ALLY" ],
     "starting_ammo": {  },
     "upgrades": false,
-    "reproduction": false,
     "baby_monster": null,
     "petfood": { "food": [ "FLESH" ], "feed": "You feed your undead minion some flesh.", "pet": "You pat your undead minion." }
   },
@@ -64,7 +62,6 @@
     "placate_triggers": [ "PLAYER_ALLY" ],
     "starting_ammo": {  },
     "upgrades": false,
-    "reproduction": false,
     "baby_monster": null,
     "petfood": { "food": [ "FLESH" ], "feed": "You feed your undead minion some flesh.", "pet": "You pat your undead minion." }
   },
@@ -82,7 +79,6 @@
     "placate_triggers": [ "PLAYER_ALLY" ],
     "starting_ammo": {  },
     "upgrades": false,
-    "reproduction": false,
     "baby_monster": null,
     "petfood": { "food": [ "FLESH" ], "feed": "You feed your undead minion some flesh.", "pet": "You pat your undead minion." }
   }
