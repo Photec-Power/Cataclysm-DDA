@@ -5,7 +5,7 @@
     "name": "necromancy testing ground",
     "sym": "N",
     "color": "dark_gray",
-    "see_cost": 5,
+    "see_cost": "medium",
     "extras": "field",
     "mondensity": 2,
     "spawns": { "group": "GROUP_ZOMBIE", "population": [ 0, 1 ], "chance": 50 },

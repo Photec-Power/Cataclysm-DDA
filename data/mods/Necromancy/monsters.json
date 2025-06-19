@@ -27,7 +27,7 @@
     "placate_triggers": [  ],
     "starting_ammo": {  },
     "upgrades": false,
-    "baby_monster": null,
+    "reproduction": {  },
     "biosignature": { "biosig_item": "fp_loyalty_card", "biosig_timer": 3 },
     "petfood": { "food": [ "FLESH" ], "feed": "You feed your undead minion some flesh.", "pet": "You pat your undead minion." }
   },
@@ -45,7 +45,8 @@
     "placate_triggers": [  ],
     "starting_ammo": {  },
     "upgrades": false,
-    "baby_monster": null,
+    "reproduction": {  },
+    "biosignature": { "biosig_item": "fp_loyalty_card", "biosig_timer": 3 },
     "petfood": { "food": [ "FLESH" ], "feed": "You feed your undead minion some flesh.", "pet": "You pat your undead minion." }
   },
   {
@@ -62,7 +63,8 @@
     "placate_triggers": [  ],
     "starting_ammo": {  },
     "upgrades": false,
-    "baby_monster": null,
+    "reproduction": {  },
+    "biosignature": { "biosig_item": "fp_loyalty_card", "biosig_timer": 3 },
     "petfood": { "food": [ "FLESH" ], "feed": "You feed your undead minion some flesh.", "pet": "You pat your undead minion." }
   },
   {
@@ -79,7 +81,8 @@
     "placate_triggers": [  ],
     "starting_ammo": {  },
     "upgrades": false,
-    "baby_monster": null,
+    "reproduction": {  },
+    "biosignature": { "biosig_item": "fp_loyalty_card", "biosig_timer": 3 },
     "petfood": { "food": [ "FLESH" ], "feed": "You feed your undead minion some flesh.", "pet": "You pat your undead minion." }
   }
 ]

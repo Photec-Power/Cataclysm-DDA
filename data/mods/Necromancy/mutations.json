@@ -11,6 +11,6 @@
     "purifiable": false,
     "category": [ "NECROMANCY" ],
     "spells_learned": [ [ "necromancy_resurrect", 1 ] ],
-    "skill_modifiers": [ { "skill": "necromancy", "modifier": 2 } ]
+    "enchantments": [ { "skills": [ { "value": "necromancy", "add": 2 } ] } ]
   }
 ]
