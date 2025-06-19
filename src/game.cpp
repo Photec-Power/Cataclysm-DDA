@@ -6457,6 +6457,23 @@ void game::examine( const tripoint_bub_ms &examp, bool with_pickup )
             return;
         } else {
             sounds::process_sound_markers( &u );
+            
+            // Check for corpses that can be examined for necromancy
+            bool found_corpse = false;
+            if( here.has_items( examp ) ) {
+                for( const item &it : here.i_at( examp ) ) {
+                    if( it.is_corpse() ) {
+                        found_corpse = true;
+                        break;
+                    }
+                }
+            }
+            
+            if( found_corpse ) {
+                iexamine::necromancy_corpse( u, examp );
+                return;
+            }
+            
             // Pick up items, if there are any, unless there is reason to not to
             if( with_pickup && here.has_items( examp ) && !u.is_mounted() &&
                 !here.has_flag( ter_furn_flag::TFLAG_NO_PICKUP_ON_EXAMINE, examp ) &&
