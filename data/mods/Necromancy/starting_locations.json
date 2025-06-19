@@ -1,6 +1,6 @@
 [
   {
-    "type": "starting_location",
+    "type": "start_location",
     "id": "necromancy_test_location",
     "overmap_tile": "necromancy_test_location"
   }
