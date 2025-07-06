@@ -73,6 +73,7 @@
 class translation;
 
 static const efftype_id effect_teleglow( "teleglow" );
+static const efftype_id effect_pet( "pet" );
 
 static const flag_id json_flag_FIT( "FIT" );
 
@@ -1333,7 +1334,10 @@ static bool add_summoned_mon( const tripoint_bub_ms &pos, const time_duration &t
     }
     const bool permanent = sp.has_flag( spell_flag::PERMANENT );
     monster &spawned_mon = *mon_ptr;
-    if( is_summon_friendly( sp ) ) {
+    if( sp.has_flag( spell_flag::PET_SUMMON ) || ( caster.is_avatar() && is_summon_friendly( sp ) ) ) {
+        spawned_mon.friendly = -1;
+        spawned_mon.add_effect( effect_pet, 1_turns, true );
+    } else if( is_summon_friendly( sp ) ) {
         spawned_mon.friendly = INT_MAX;
     } else {
         spawned_mon.friendly = 0;
